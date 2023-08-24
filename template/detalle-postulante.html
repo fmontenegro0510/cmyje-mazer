@@ -202,7 +202,10 @@
                                             </div>
                                         </div>
                                         <div class="col-12 d-flex justify-content-end">
-                                            <button type="submit" class="btn btn-inline-success me-1 mb-1">Actualizar</button>                                            
+                                            <div class="buttons">
+                                                <a href="#" class="btn btn-outline-info" data-bs-toggle="modal"
+                                                data-bs-target="#editPostulante">Actualizar</a>
+                                            </div>                                        
                                         </div>
                                     </div>
                                 </div>
@@ -241,7 +244,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td class="text-bold-500">Certificado de Buena Conducta</td>
+                                                            <td class="text-bold-500">Buena Conducta</td>
                                                             <td>
                                                                 <div class="badges">
                                                                 <span class="badge bg-warning" data-bs-toggle="tooltip" data-bs-placement="right" title="3 Meses de Vigencia">07/10/2016</span>
@@ -427,7 +430,7 @@ aria-labelledby="galleryModalTitle" aria-hidden="true">
 role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="galleryModalTitle">Foto Postulante</h5>
+                <h5 class="modal-title" id="galleryModalTitle">ALVARENGA DE DOMEZ SAMELA, Yolanda Idalina</h5>
                 <button type="button" class="close" data-bs-dismiss="modal"
                     aria-label="Close">
                     <i data-feather="x"></i>
@@ -438,7 +441,7 @@ role="document">
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> -->
             </div>
         </div>
     </div>
@@ -483,7 +486,7 @@ aria-labelledby="myModalLabel110" aria-hidden="true">
 <!-- Modal - Agregar Concurso -->
 <div class="modal fade text-left" id="addDocumentacion" tabindex="-1" role="dialog"
 aria-labelledby="myModalLabel110" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable "
     role="document">
     <div class="modal-content">
         <div class="modal-header bg-warning">
@@ -517,13 +520,13 @@ aria-labelledby="myModalLabel110" aria-hidden="true">
 
 
 <!-- Modal - Editar Postulante -->
-<div class="modal fade text-left" id="addDocumentacion" tabindex="-1" role="dialog"
+<div class="modal fade text-left" id="editPostulante" tabindex="-1" role="dialog"
 aria-labelledby="myModalLabel110" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
     role="document">
     <div class="modal-content">
-        <div class="modal-header bg-warning">
-            <h5 class="modal-title white" id="myModalLabel110">Actualizar Documentación
+        <div class="modal-header bg-info">
+            <h5 class="modal-title white" id="myModalLabel110">Datos Personales
             </h5>
             <button type="button" class="close" data-bs-dismiss="modal"
                 aria-label="Close">
@@ -532,19 +535,114 @@ aria-labelledby="myModalLabel110" aria-hidden="true">
         </div>
         <div class="modal-body">
 
+            <form class="form form-vertical">
+                <div class="form-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group has-icon-left">
+                                <label for="first-name-icon">Apellido y Nombre</label>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" readonly="readonly"
+                                        placeholder="" id="first-name-icon" value="ALVARENGA DE DOMEZ SAMELA, Yolanda Idalina">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">                                            
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">DNI</label>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="" value="10.843.023" readonly="readonly"
+                                        id="email-id-icon">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">                                            
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Email</label>
+                                <div class="position-relative"><a href="mailto://tatilacava@hotmail.com.ar">
+                                    <input type="text" class="form-control" placeholder="" value="tatilacava@hotmail.com.ar " readonly="readonly"
+                                        id="email-id-icon">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">                                            
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Fecha de Nacimiento</label>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="" value="01/07/1988" readonly="readonly"
+                                        id="email-id-icon">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">                                            
+                            <div class="form-group has-icon-left">
+                                <label for="email-id-icon">Teléfono</label>
+                                <div class="position-relative"><a href="tel://03735-625141">
+                                    <input type="text" class="form-control" placeholder="" value="03735-625141" readonly="readonly"
+                                        id="email-id-icon">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group has-icon-left">
+                                <label for="first-name-icon">Domicilio</label>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" readonly="readonly"
+                                        placeholder="" id="first-name-icon" value="Bº Cooperación, Mza-2, casa 14 – Villa Ángela">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group has-icon-left">
+                                <label for="first-name-icon">Cargo que ocupa</label>
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" readonly="readonly"
+                                        placeholder="" id="first-name-icon" value="ALVARENGA DE DOMEZ SAMELA, Yolanda Idalina">
+                                    <div class="form-control-icon">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+
+
         </div>
         <div class="modal-footer">
+            <button type="button" class="btn btn-info ml-1"
+            data-bs-dismiss="modal">
+            <i class="bx bx-check d-block d-sm-none"></i>
+            <span class="d-none d-sm-block">Guardar</span>
+            </button>
+
             <button type="button" class="btn btn-light-secondary"
                 data-bs-dismiss="modal">
                 <i class="bx bx-x d-block d-sm-none"></i>
                 <span class="d-none d-sm-block">Cancelar</span>
             </button>
 
-            <button type="button" class="btn btn-warning ml-1"
-                data-bs-dismiss="modal">
-                <i class="bx bx-check d-block d-sm-none"></i>
-                <span class="d-none d-sm-block">Guardar</span>
-            </button>
+
         </div>
     </div>
 </div>

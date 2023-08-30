@@ -214,18 +214,116 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        <div class="divider divider-left">
+                                            <div class="divider-text"><h5>Requisitos Constitucionales</h5></div>
+                                        </div>
                                         <div class="col-12">
                                             <div class="form-group has-icon-left">
                                                 <label for="first-name-icon">Cargo que ocupa</label>
                                                 <div class="position-relative">
-                                                    <input type="text" class="form-control" readonly="readonly"
-                                                        placeholder="" id="first-name-icon" value="ALVARENGA DE DOMEZ SAMELA, Yolanda Idalina">
+                                                    <input type="text" class="form-control" 
+                                                        placeholder="" id="first-name-icon" value="ASESORA de la ASESORIA DEL MENOR DE EDAD de la ciudad de VILLA ANGELA">
                                                     <div class="form-control-icon">
                                                         <i class="bi bi-person"></i>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="col-6">
+                                            <div class="form-group has-icon-left">
+                                                <label for="first-name-icon">Nacionalidad</label>
+                                                <div class="position-relative">
+                                                    <select name="reason" class="form-control">
+                                                        <option value="Inquiry">Argentina</option>
+                                                        <option value="Complain">Paraguayo</option>
+                                                    </select>
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group has-icon-left">
+                                                <label for="first-name-icon">Estado Civil</label>
+                                                <div class="position-relative">
+                                                    <select name="reason" class="form-control">
+                                                        <option value="Inquiry">Soltero/a</option>
+                                                        <option value="Complain">Casado/a</option>
+                                                        <option value="Quotation">Viudo/a</option>
+                                                        <option value="Quotation">Divorciado/a</option>
+                                                    </select>
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="form-group has-icon-left">
+                                                <label for="first-name-icon">Titulo</label>
+                                                <div class="position-relative">
+                                                    <input type="text" class="form-control" readonly="readonly"
+                                                        placeholder="" id="first-name-icon" value="ABOGADO">
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="form-group has-icon-left">
+                                                <label for="first-name-icon">Fecha del Titulo</label>
+                                                <div class="position-relative">
+                                                    <input type="date" class="form-control" placeholder="" value="2023-08-30" min="2018-01-01" max="2050-12-31" />
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="form-group has-icon-left">
+                                                <label for="first-name-icon">Antiguedad en la matricula</label>
+                                                <div class="position-relative">
+                                                    <input type="date" class="form-control" placeholder="" value="2023-08-30" min="2018-01-01" max="2050-12-31" />
+
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                    <div class="py-1">
+                                                        <input type="checkbox" id="checkbox1" class="form-check-input" checked>
+                                                        <label for="checkbox1">No posee</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+ 
+                                        <div class="col-6">
+                                            <div class="form-group has-icon-left">
+                                                <label for="first-name-icon">Antiguedad en la magistratura</label>
+                                                <div class="position-relative">
+                                                    <input type="date" class="form-control" placeholder="" value="2023-08-30" min="2018-01-01" max="2050-12-31" />
+
+                                                    <div class="form-control-icon">
+                                                        <i class="bi bi-person"></i>
+                                                    </div>
+                                                    <div class="py-1">
+                                                        <input type="checkbox" id="checkbox1" class="form-check-input" checked>
+                                                        <label for="checkbox1">No posee</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+
+
                                         <div class="col-12 d-flex justify-content-end">
                                             <div class="buttons">
                                                 <a href="#" class="btn btn-outline-info" data-bs-toggle="modal"
@@ -429,11 +527,6 @@
                     <h4>Antecedentes Profesionales y Cursos</h4>
                 </div>
                 <div class="card-body">
-
-                    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31" />
-
-
-
                     <textarea name="" id="default" cols="30" rows="10"></textarea>
                 </div>
                 </div>
@@ -710,7 +803,15 @@ aria-labelledby="myModalLabel110" aria-hidden="true">
 <!-- Tiny MCE -->
 <script src="assets/extensions/tinymce/tinymce.min.js"></script>
 <script src="assets/js/pages/tinymce.js"></script>
-
+<script>
+    tinymce.init({
+        selector: 'textarea', // change this according to your HTML
+        language: 'es',
+        theme: 'modern',
+        height: 100%,
+        encoding: ‘UTF-8’        
+      });
+</script>
 
 </body>
 

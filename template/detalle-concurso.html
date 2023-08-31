@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mazer Admin Dashboard</title>
+    
+    <link rel="stylesheet" href="assets/css/main/app.css">
+    <link rel="stylesheet" href="assets/css/main/app-dark.css">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="assets/extensions/filepond/filepond.css">
+    <link rel="stylesheet" href="assets/extensions/filepond-plugin-image-preview/filepond-plugin-image-preview.css">
+    <link rel="stylesheet" href="assets/extensions/toastify-js/src/toastify.css">
+    <link rel="stylesheet" href="assets/css/pages/filepond.css">
+    
+<link rel="stylesheet" href="assets/css/shared/iconly.css">
+
+<link rel="stylesheet" href="assets/extensions/choices.js/public/assets/styles/choices.css">
+
+
+</head>
+
+<body>
+    <div id="app">
+        <div id="sidebar" class="active">
+            <div class="sidebar-wrapper active">
+    <div class="sidebar-header position-relative">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="logo">
+                <a href="index.html"><img src="assets/images/logo/logo.svg" alt="Logo" srcset=""></a>
+            </div>
+            <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2" opacity=".3"></path><g transform="translate(-210 -1)"><path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path><circle cx="220.5" cy="11.5" r="4"></circle><path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2"></path></g></g></svg>
+                <div class="form-check form-switch fs-6">
+                    <input class="form-check-input  me-0" type="checkbox" id="toggle-dark" >
+                    <label class="form-check-label" ></label>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="m17.75 4.09l-2.53 1.94l.91 3.06l-2.63-1.81l-2.63 1.81l.91-3.06l-2.53-1.94L12.44 4l1.06-3l1.06 3l3.19.09m3.5 6.91l-1.64 1.25l.59 1.98l-1.7-1.17l-1.7 1.17l.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95l2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85c-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14c.4-.4.82-.76 1.27-1.08c.75-.53 1.93.36 1.85 1.19c-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82c-2.81 3.14-2.7 7.96.31 10.98c3.02 3.01 7.84 3.12 10.98.31Z"></path></svg>
+            </div>
+            <div class="sidebar-toggler  x">
+                <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar-menu">
+        <ul class="menu">
+            <li class="sidebar-title">Menu</li>
+            
+            <li
+                class="sidebar-item active ">
+                <a href="index.html" class='sidebar-link'>
+                    <i class="bi bi-grid-fill"></i>
+                    <span>Panel Principal</span>
+                </a>
+            </li>
+            <li
+                class="sidebar-item  ">
+                <a href="http://www.google.com.ar" class='sidebar-link'>
+                    <i class="bi bi-journal-check"></i>
+                    <span>Postulantes</span>
+                </a>
+            </li>
+            <li
+                class="sidebar-item  ">
+                <a href="http://www.google.com.ar" class='sidebar-link'>
+                    <i class="bi bi-star"></i>
+                    <span>Concursos</span>
+                </a>
+            </li>            
+            <li
+                class="sidebar-item  ">
+                <a href="http://www.google.com.ar" class='sidebar-link'>
+                    <i class="bi bi-heart"></i>
+                    <span>Psicofísicos</span>
+                </a>
+            </li>            
+        </ul>
+    </div>
+</div>
+        </div>
+        <div id="main">
+            <header class="mb-3">
+                <a href="#" class="burger-btn d-block d-xl-none">
+                    <i class="bi bi-justify fs-3"></i>
+                </a>
+            </header>
+            
+<div class="page-heading">
+    <h3> Detalle Concurso</h3>
+</div>
+<div class="page-content">
+    <section class="row">
+        <div class="col-12 col-xl-12">
+
+            <div class="card">
+                <div class="card-header">
+                    <h4>Descripción del Concurso</h4>
+                </div>
+                <div class="card-body">
+                    <form class="form form-vertical">
+                        <div class="form-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="form-group has-icon-left">
+                                        <label for="first-name-icon">Nombre del Concurso</label>
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control" readonly="readonly"
+                                                placeholder="" id="first-name-icon" value="ALVARENGA DE GOMEZ SAMELA, Yolanda Idalina">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-person"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">                                            
+                                    <div class="form-group has-icon-left">
+                                        <label for="email-id-icon">Fecha Escrito</label>
+                                        <div class="position-relative">
+                                            <input type="date" class="form-control" placeholder="" value="2023-08-30" min="2018-01-01" max="2050-12-31" />
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2">                                            
+                                    <div class="form-group has-icon-left">
+                                        <label for="email-id-icon">Fecha Oral</label>
+                                        <div class="position-relative">
+                                            <input type="date" class="form-control" placeholder="" value="2023-08-30" min="2018-01-01" max="2050-12-31" />
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-4">                                            
+                                    <div class="form-group has-icon-left">
+                                        <label for="email-id-icon">Resolución del S.T.J.</label>
+                                        <div class="position-relative">
+                                            <input type="text" class="form-control" placeholder="" value="N° 512 - 10.06.2022" readonly="readonly"
+                                                id="email-id-icon">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-4">                                            
+                                    <div class="form-group has-icon-left">
+                                        <label for="email-id-icon">Comunicación al CM</label>
+                                        <div class="position-relative"><a href="">
+                                            <input type="text" class="form-control" placeholder="" value="Oficio N° 2000 - 16.06.2022" readonly="readonly"
+                                                id="email-id-icon">
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div></a>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="col-2">                                            
+                                    <div class="form-group has-icon-left">
+                                        <label for="email-id-icon">Fecha del Edicto</label>
+                                        <div class="position-relative"><a href="mailto://tatilacava@hotmail.com.ar">
+                                            <input type="date" class="form-control" placeholder="" value="2023-08-30" min="2018-01-01" max="2050-12-31" />
+
+                                            <div class="form-control-icon">
+                                                <i class="bi bi-envelope"></i>
+                                            </div></a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-2">                                            
+                                    <div class="form-group has-icon-left">
+                                        <label for="email-id-icon"> </label>
+                                        <div class="position-relative text-center">
+                                            <a href="mailto://tatilacava@hotmail.com.ar">
+                                                <p>Descargar</p>
+                                                <div class="form-control-icon">
+                                                    </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>                                      
+                            </div> 
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Postulantes</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>APELLIDO Y NOMBRE</th>
+                                                <th>DNI</th>
+                                                <th>EFD</th>
+                                                <th>NP</th>
+                                                <th>CALIFICACIÓN</th>
+                                                <th>RESERVA</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="table-success">
+                                                <td class="text-bold-500">BATALLA, Analia Mariel</td>
+                                                <td>33.654.987</td>
+                                                <td class="text-bold-500">NO</td>
+                                                <td>NO</td>
+                                                <td>ANE</td>
+                                                <td>SI</td>
+
+                                                <td><a href="#"><i
+                                                            class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                            data-feather="mail"></i></a>
+                                                            <a href="#"><i
+                                                                class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                data-feather="mail"></i></a>
+                                                                <a href="#"><i
+                                                                    class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                    data-feather="mail"></i></a></td>
+                                            </tr>
+                                            <tr class="table-danger">
+                                                <td class="text-bold-500">SANCHEZ, Rocio Belen</td>
+                                                <td>33.654.987</td>
+                                                <td class="text-bold-500">NO</td>
+                                                <td>NO</td>
+                                                <td>NANE</td>
+                                                <td>SI</td>
+
+                                                <td><a href="#"><i
+                                                            class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                            data-feather="mail"></i></a>
+                                                            <a href="#"><i
+                                                                class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                data-feather="mail"></i></a>
+                                                                <a href="#"><i
+                                                                    class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                    data-feather="mail"></i></a></td>
+                                            </tr>
+                                            <tr class="table-warning">
+                                                <td class="text-bold-500">SCHEFFLER Betiana Elizabeth</td>
+                                                <td>33.654.987</td>
+                                                <td class="text-bold-500">NO</td>
+                                                <td>SI</td>
+                                                <td>NANE</td>
+                                                <td>SI</td>
+
+                                                <td><a href="#"><i
+                                                            class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                            data-feather="mail"></i></a>
+                                                            <a href="#"><i
+                                                                class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                data-feather="mail"></i></a>
+                                                                <a href="#"><i
+                                                                    class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                    data-feather="mail"></i></a></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-bold-500">BATALLA, Analia Mariel</td>
+                                                <td>33.654.987</td>
+                                                <td class="text-bold-500">NO</td>
+                                                <td>NO</td>
+                                                <td>ANE</td>
+                                                <td>SI</td>
+
+                                                <td><a href="#"><i
+                                                            class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                            data-feather="mail"></i></a>
+                                                            <a href="#"><i
+                                                                class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                data-feather="mail"></i></a>
+                                                                <a href="#"><i
+                                                                    class="badge-circle badge-circle-light-secondary font-medium-1"
+                                                                    data-feather="mail"></i></a></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Comisión Examinadora</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 ">Miembros Titulares</h5>
+                                        <small>3 days ago</small>
+                                    </div>
+                                    <div class="form-check form-check-success">   
+                                        <p class="mb-1">
+                                            <input class="form-check-input" type="radio" name="Primary" id="Primary" checked>
+                                            <label class="form-check-label" for="Primary">
+                                                Dr. Carlos Alejandro Daniel Grillo
+                                            </label>
+                                        </p>
+                                        <p class="mb-1">
+                                            <input class="form-check-input" type="radio" name="Primary2" id="Primary" checked>
+                                            <label class="form-check-label" for="Primary">
+                                                Dra. Maria Gisella Valverde
+                                            </label>
+                                        </p>
+                                        <p class="mb-1">
+                                            <input class="form-check-input" type="radio" name="Primary3" id="Primary" checked>
+                                            <label class="form-check-label" for="Primary">
+                                                Dra. Nora Miryam Fernandez
+                                            </label>
+                                        </p>
+                                    </div>
+                                    
+                                </a>
+                                <a href="#" class="list-group-item list-group-item-action ">
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <h5 class="mb-1 ">Miembros Suplentes</h5>
+                                        <small>xx</small>
+                                    </div>
+                                    <div class="form-check form-check-warning">                                                  
+                                    <p class="mb-1">
+                                        <input class="form-check-input" type="radio" name="Warning" id="Primary" checked>
+                                        <label class="form-check-label" for="Primary">
+                                            Dra. Graciela Maria Gomez Vara
+                                        </label>
+                                    </p>
+                                    <p class="mb-1">
+                                        <input class="form-check-input" type="radio" name="Warning2" id="Primary" checked>
+                                        <label class="form-check-label" for="Primary">
+                                            Dra. Maria gabriela Rosello Brajovich
+                                        </label>
+                                        
+                                    </p>
+                                    <p class="mb-1">
+                                        <input class="form-check-input" type="radio" name="Warning3" id="Primary" checked>
+                                        <label class="form-check-label" for="Primary">
+                                            Dra. Nora Miryam Fernandez
+                                        </label>
+                                    </p>
+                                </div>
+                                    
+                                </a>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card">
+                        <div class="card-header">
+                            <h4>Propuestos en Acuerdo</h4>
+                        </div>
+                        <div class="card-body">
+                          <div class="divider divider-left">
+                                <div class="divider-text">1ra Ronda</div>
+                         </div>
+                           <div class="row">
+                            <div class="col-8">
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">1ra Votación</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-4">
+
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Numero de Acta</label>
+                                    <input type="text" class="form-control" placeholder="" value="Oficio N° 2000 - 16.06.2022" readonly="readonly" id="email-id-icon">
+                                </div>
+                            </div>
+                        </div>
+                            <div class="divider divider-left ">
+                                <div class="divider-text">2da Ronda</div>
+                            </div>
+                           <div class="row">
+                            <div class="col-8">
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">2da Votación</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-4">
+
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Numero de Acta</label>
+                                    <input type="text" class="form-control" placeholder="" value="Oficio N° 2000 - 16.06.2022" readonly="readonly" id="email-id-icon">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="divider divider-left ">
+                            <div class="divider-text">Propuestos</div>
+                        </div>
+                       <div class="row">
+                        <div class="col-8">
+                            <div class="form-group mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Propuestos</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-4">
+
+                            <div class="form-group mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Numero de Acta</label>
+                                <input type="text" class="form-control" placeholder="" value="ACTA N° 1183 - 23.02.2023" readonly="readonly" id="email-id-icon">
+
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                </div>
+            </div>
+
+
+        </div>
+       
+
+        </div>
+    </section>
+</div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog"
+    aria-labelledby="galleryModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-centered"
+    role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="galleryModalTitle">ALVARENGA DE GOMEZ SAMELA, Yolanda Idalina</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal"
+                        aria-label="Close">
+                        <i data-feather="x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100" src="https://www.latercera.com/resizer/NRNVtGXLZ4koN7HWqudc8nyv3cs=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/LS6NAJWL4ZA4PMRN4MTK5YYLBE.jpeg">
+                </div>
+
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - Agregar Concurso -->
+    <div class="modal fade text-left" id="addConcurso" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel110" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+        role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-success">
+                <h5 class="modal-title white" id="myModalLabel110">Agregar Concurso
+                </h5>
+                <button type="button" class="close" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-secondary"
+                    data-bs-dismiss="modal">
+                    <i class="bx bx-x d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Cancelar</span>
+                </button>
+
+                <button type="button" class="btn btn-success ml-1"
+                    data-bs-dismiss="modal">
+                    <i class="bx bx-check d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Guardar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Modal Agregar Concurso -->
+
+
+    <!-- Modal - Agregar Concurso -->
+    <div class="modal fade text-left" id="addDocumentacion" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel110" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable "
+        role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-warning">
+                <h5 class="modal-title white" id="myModalLabel110">Actualizar Documentación
+                </h5>
+                <button type="button" class="close" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light-secondary"
+                    data-bs-dismiss="modal">
+                    <i class="bx bx-x d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Cancelar</span>
+                </button>
+
+                <button type="button" class="btn btn-warning ml-1"
+                    data-bs-dismiss="modal">
+                    <i class="bx bx-check d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Guardar</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Modal Agregar Concurso -->
+
+
+    <!-- Modal - Editar Postulante -->
+    <div class="modal fade text-left" id="editPostulante" tabindex="-1" role="dialog"
+    aria-labelledby="myModalLabel110" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+        role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info">
+                <h5 class="modal-title white" id="myModalLabel110">Datos Personales
+                </h5>
+                <button type="button" class="close" data-bs-dismiss="modal"
+                    aria-label="Close">
+                    <i data-feather="x"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <form class="form form-vertical">
+                    <div class="form-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group has-icon-left">
+                                    <label for="first-name-icon">Apellido y Nombre</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" readonly="readonly"
+                                            placeholder="" id="first-name-icon" value="ALVARENGA DE GOMEZ SAMELA, Yolanda Idalina">
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-person"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">                                            
+                                <div class="form-group has-icon-left">
+                                    <label for="email-id-icon">DNI</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" placeholder="" value="10.843.023" readonly="readonly"
+                                            id="email-id-icon">
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">                                            
+                                <div class="form-group has-icon-left">
+                                    <label for="email-id-icon">Email</label>
+                                    <div class="position-relative"><a href="mailto://tatilacava@hotmail.com.ar">
+                                        <input type="text" class="form-control" placeholder="" value="tatilacava@hotmail.com.ar " readonly="readonly"
+                                            id="email-id-icon">
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">                                            
+                                <div class="form-group has-icon-left">
+                                    <label for="email-id-icon">Fecha de Nacimiento</label>
+                                    <div class="position-relative">
+                                        
+                                        <input type="text" class="form-control" placeholder="" value="01/07/1988" readonly="readonly"
+                                            id="email-id-icon">
+
+
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">                                            
+                                <div class="form-group has-icon-left">
+                                    <label for="email-id-icon">Teléfono</label>
+                                    <div class="position-relative"><a href="tel://03735-625141">
+                                        <input type="text" class="form-control" placeholder="" value="03735-625141" readonly="readonly"
+                                            id="email-id-icon">
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-envelope"></i>
+                                        </div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group has-icon-left">
+                                    <label for="first-name-icon">Domicilio</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" readonly="readonly"
+                                            placeholder="" id="first-name-icon" value="Bº Cooperación, Mza-2, casa 14 – Villa Ángela">
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-person"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group has-icon-left">
+                                    <label for="first-name-icon">Cargo que ocupa</label>
+                                    <div class="position-relative">
+                                        <input type="text" class="form-control" readonly="readonly"
+                                            placeholder="" id="first-name-icon" value="ALVARENGA DE DOMEZ SAMELA, Yolanda Idalina">
+                                        <div class="form-control-icon">
+                                            <i class="bi bi-person"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info ml-1"
+                data-bs-dismiss="modal">
+                <i class="bx bx-check d-block d-sm-none"></i>
+                <span class="d-none d-sm-block">Guardar</span>
+                </button>
+
+                <button type="button" class="btn btn-light-secondary"
+                    data-bs-dismiss="modal">
+                    <i class="bx bx-x d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Cancelar</span>
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Modal Editar Postulante -->
+
+<!-- End Modal -->
+            <footer>
+                <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>2023 &copy; Dirección General de Tecnología - Consejo de la Magistratura y Jurado de Enjuiciamiento de la Provincia del Chaco</p>
+                    </div>
+                    <div class="float-end">
+                        <p><span class="text-danger"><i class="bi bi-bug"></i></span></p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/app.js"></script>
+    
+<!-- Need: Apexcharts -->
+<script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="assets/js/pages/dashboard.js"></script>
+<script src="assets/extensions/filepond/filepond.js"></script>
+<script src="assets/extensions/toastify-js/src/toastify.js"></script>
+<script src="assets/js/pages/filepond.js"></script>
+
+<script src="assets/extensions/choices.js/public/assets/scripts/choices.js"></script>
+<script src="assets/js/pages/form-element-select.js"></script>
+
+<script>
+    // If you want to use tooltips in your project, we suggest initializing them globally
+    // instead of a "per-page" level.
+    document.addEventListener('DOMContentLoaded', function () {
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    }, false);
+</script>
+
+
+<!-- Tiny MCE -->
+<script src="assets/extensions/tinymce/tinymce.min.js"></script>
+<script src="assets/js/pages/tinymce.js"></script>
+<script>
+    tinymce.init({
+        selector: 'textarea', // change this according to your HTML
+        language: 'es',
+        theme: 'modern',
+        height: 100%,
+        encoding: ‘UTF-8’        
+      });
+</script>
+
+</body>
+
+</html>
